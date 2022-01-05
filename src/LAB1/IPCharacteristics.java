@@ -37,7 +37,7 @@ public class IPCharacteristics {
                 System.out.println(ia + " is multicast organization local address.");
             }
         } catch (UnknownHostException ue) {
-            System.out.println("Error Occurred: " + ue.getStackTrace());
+            System.out.println("Error Occurred: " + ue.getLocalizedMessage());
         }
     }
 }
