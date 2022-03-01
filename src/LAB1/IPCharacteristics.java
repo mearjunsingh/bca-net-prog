@@ -6,11 +6,12 @@ public class IPCharacteristics {
     public static void main(String[] args) {
         try {
             InetAddress ia = InetAddress.getByName("127.0.0.1");
+            
             if (ia.isAnyLocalAddress()) {
                 System.out.println(ia + " is local address.");
             }
             if (ia.isLoopbackAddress()) {
-                System.out.println(ia + " is loop back address");
+                System.out.println(ia + " is loop back address.");
             }
             if (ia.isLinkLocalAddress()) {
                 System.out.println(ia + " is link local address.");

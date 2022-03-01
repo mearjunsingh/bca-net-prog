@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class IOStreams {
     static String ROOT = "src/LAB0/";
+
     public static void main(String[] args) {
         RecapJavaIO recap = new RecapJavaIO();
         String source = ROOT + "myfile.txt";
@@ -29,8 +30,7 @@ class RecapJavaIO {
             System.out.println("Your content have been saved to myFile.txt");
 
             sc.close();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
@@ -49,8 +49,7 @@ class RecapJavaIO {
 
             istream.close();
             ostream.close();
-        } 
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
